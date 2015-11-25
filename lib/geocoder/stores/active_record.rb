@@ -155,8 +155,8 @@ module Geocoder::Store
       # capabilities (trig functions?).
       #
       def distance_sql(latitude, longitude, options = {})
-        method_prefix = using_sqlite? ? "approx" : "full"
-        #method_prefix = "approx"
+        #method_prefix = using_sqlite? ? "approx" : "full"
+        method_prefix = "approx"
         Geocoder::Sql.send(
           method_prefix + "_distance",
           latitude, longitude,
