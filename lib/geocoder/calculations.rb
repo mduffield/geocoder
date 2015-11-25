@@ -424,7 +424,8 @@ module Geocoder
           end
         end
       end
-      [ NAN, NAN ]
+      #[ NAN, NAN ]
+      point
     end
   end
 end
